@@ -10,7 +10,9 @@
 }
 
 html{
-    @apply scroll-smooth h-[100%]
+    @apply scroll-smooth h-[100%];
+    scrollbar-color: #193358 #0A1422;
+    scrollbar-width: thin;
 }
 
 .App{
@@ -23,6 +25,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #0A1422;
     color: #E1EDFF;
+    
 }
 
 .about-ul{
@@ -116,8 +119,9 @@ textarea:focus, input:focus{
     }
 }
 
-.portal-animation{
-    animation: appear 0.3s ease-in-out;
+/* Doesn't work properly in deployment build */
+/* .portal-animation{
+    animation: appear 0.5s ease-in-out;
 }
 
 @keyframes appear {
@@ -127,7 +131,7 @@ textarea:focus, input:focus{
     100%{
         @apply scale-100
     }
-}
+} */
 
 .portal-opacity-animation {
     animation: opacity 0.4s ease-in-out;
@@ -141,3 +145,5 @@ textarea:focus, input:focus{
         @apply opacity-80;
     }
 }
+
+
