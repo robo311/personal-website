@@ -9,7 +9,7 @@ function Projects() {
       <h1 className='section-heading'>02. <span className='font-semibold'>Projects</span></h1>
       <main className=''>
         {data?.projects?.map((item) => 
-          <div className='relative grid gap-3 grid-cols-12 items-center my-[100px]'>
+          <div key={item.id} className='relative grid gap-3 grid-cols-12 items-center my-[100px]'>
             <div className='project-desc' style={{ gridColumn: item.column_desc, textAlign: item.text_dir}}>
              <div>
               <h2 className='text-[#4AFFA8] text-[20px] font-semibold mb-2'>{item.feature}</h2>
@@ -22,7 +22,7 @@ function Projects() {
                 <div className='mt-4'>
                   <ul className='flex gap-x-8 gap-y-2 max-w-[500px] flex-wrap' style={{justifyContent: item.justify}}>
                     {item.tags.map((tag)=> (
-                      <li>{tag}</li>
+                      <li key={tag}>{tag}</li>
                     ))}
                   </ul>
                 </div>
@@ -34,7 +34,7 @@ function Projects() {
              </div>
             </div>
             <div className='project-image lg:mt-[60px]' style={{ gridColumn: item.column_img}}>
-              <img className='w-full' src={`/src/assets/project_${item.id}.png`} alt="" />
+              <img className='w-full' src={`src/assets/project_${item.id}.png`} alt="" />
             </div>
           </div>
         )}

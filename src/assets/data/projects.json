@@ -42,7 +42,7 @@
         "feature": "Featured",
         "main_text": " was made by me for me. It showcase my projects, brief information about me and functional contact form. Website was made primarily with React and Tailwind.",
         "pre_text": "This ", 
-        "tags": ["React", "HTML", "CSS", "JSON", "Responsive"],
+        "tags": ["React", "HTML", "CSS", "JSON", "EmailJS", "Responsive"],
         "source": "Open-Source",
         "source_color": "#409024",
         "github": "https://github.com/robo311/personal-website",

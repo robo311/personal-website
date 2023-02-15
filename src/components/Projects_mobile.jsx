@@ -8,8 +8,8 @@ function Projects_mobile() {
     <section>
         <h1 className='section-heading'>02. <span className='font-semibold'>Projects</span></h1>
         {data?.projects?.map((item) => (
-            <main className='flex justify-center my-4'>
-            <div className='background-img-projects rounded-lg min-h-[350px]' style={{backgroundImage: `url(/src/assets/project_${item.id}_mobile.png)`}}>
+            <main key={item.id} className='flex justify-center my-4'>
+            <div className='background-img-projects rounded-lg min-h-[350px]' style={{backgroundImage: `url(src/assets/project_${item.id}_mobile.png)`}}>
                 <div className='px-8 py-6'>
                     <div>
                         <h2 className='text-[#4AFFA8] text-[18px] font-semibold mb-2'>{item.feature}</h2>
@@ -24,7 +24,7 @@ function Projects_mobile() {
                     <div className='mt-6'>
                         <ul className='flex gap-x-8 gap-y-2 flex-wrap'>
                             {item.tags.map((tag)=> (
-                                <li>{tag}</li>
+                                <li key={tag}>{tag}</li>
                             ))}
                         </ul>
                     </div>
