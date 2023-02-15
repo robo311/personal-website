@@ -1,5 +1,4 @@
 import React from 'react'
-import project_img1 from "../assets/project_1.png"
 import { AiFillGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
 import data from "../data/projects.json"

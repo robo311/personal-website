@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
-import { useAlert } from 'react-alert';
+
 
 function Contact() {
     const form = useRef();
@@ -16,22 +16,13 @@ function Contact() {
             document.getElementById("from_name").value = ""
             document.getElementById("from_email").value = ""
             document.getElementById("message").value = ""
-            showAlert()
+            
         }, (error) => {
             console.log(error.text);
             setError(true)
-            showAlert()
+            
         });
     };
-    const alert = useAlert()
-
-    const showAlert = () => {
-        if(!error){
-            alert.show("Message succesfully sent!", {timeout: 5000, type: 'success', transition: 'fade'})
-        }else if(error){
-            alert.show("Something went wrong :/ Please contact me at rhornik311@gmailcom instead!", {timeout: 5000, type: 'error'})
-        }
-    }
 
   return (
     <section id='contact' className='mb-8'>
