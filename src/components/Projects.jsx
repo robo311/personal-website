@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
-import data from "../data/projects.json"
+import data from "../assets/data/projects.json"
 
 function Projects() {
   return (
