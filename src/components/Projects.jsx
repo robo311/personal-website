@@ -7,7 +7,7 @@ function Projects() {
   return (
     <section id='projects'>
       <h1 className='section-heading'>02. <span className='font-semibold'>Projects</span></h1>
-      <main className=''>
+      <main className='mt-[-50px]'>
         {data?.projects?.map((item) => 
           <div key={item.id} className='relative grid gap-3 grid-cols-12 items-center my-[100px]'>
             <div className='project-desc' style={{ gridColumn: item.column_desc, textAlign: item.text_dir}}>

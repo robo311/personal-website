@@ -3,7 +3,7 @@ import React from 'react'
 
 function About() {
   return (
-    <section className='mb-8' id='aboutme'>
+    <section className='mb-[100px]' id='aboutme'>
         <h1 className='section-heading'>01. <span className='font-semibold'>About me</span></h1>
         <main className='flex xl:flex-row flex-col 2xl:gap-[100px]'>
             <div>

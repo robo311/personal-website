@@ -5,7 +5,7 @@ import laptop from "../assets/laptop.json"
 
 function Heropage() {
   return (
-    <section className='sm:mt-[200px] mt-[150px]'>
+    <section className='sm:mt-[150px] mt-[100px]'>
         <main className='flex'>
             <div>
                 <h1 className=' font-semibold sm:text-[52px] text-[46px]'>Robert Hornik</h1>

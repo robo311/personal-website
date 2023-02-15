@@ -4,7 +4,7 @@ import { AiFillGithub, AiOutlineBehanceSquare } from 'react-icons/ai'
 
 function More_projects() {
   return (
-    <section>
+    <section className='mb-[50px]'>
         <h1 className='text-[32px] font-semibold text-center mt-[50px] mb-[20px]'>More Projects</h1>
         <main className='flex justify-center gap-[70px]'>
             <a href="https://github.com/robo311">
