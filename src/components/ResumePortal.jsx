@@ -17,7 +17,7 @@ function ResumePortal({ showPortal, closePortal }) {
                         <h3 className='font-medium'>English Version</h3>
                     </div>
                 </a>
-                <a href="src/assets/CV/Zivotopis_2023.pdf" target="_blank">
+                <a href="/Zivotopis_2023.pdf" target="_blank">
                     <div className=' flex flex-col items-center text-center gap-3 bg-[#0f223d] rounded-xl hover:bg-[#183257] transition-all duration-150 ease-in-out cursor-pointer px-4 py-5'>
                         <AiOutlineFilePdf color='white' size={50}/>
                         <h3 className='font-medium'>Slovak Version</h3>
