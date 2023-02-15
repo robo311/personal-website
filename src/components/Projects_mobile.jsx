@@ -9,7 +9,7 @@ function Projects_mobile() {
         <h1 className='section-heading'>02. <span className='font-semibold'>Projects</span></h1>
         {data?.projects?.map((item) => (
             <main key={item.id} className='flex justify-center my-4'>
-            <div className='background-img-projects rounded-lg min-h-[350px]' style={{backgroundImage: `url(src/assets/project_${item.id}_mobile.png)`}}>
+            <div className='background-img-projects rounded-lg min-h-[350px]' style={{backgroundImage: `url(${item.mobile_image})`}}>
                 <div className='px-8 py-6'>
                     <div>
                         <h2 className='text-[#4AFFA8] text-[18px] font-semibold mb-2'>{item.feature}</h2>
