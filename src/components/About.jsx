@@ -1,5 +1,5 @@
 import React from 'react'
-import img from "../assets/aboutme-picture.png"
+
 
 function About() {
   return (
@@ -31,7 +31,7 @@ function About() {
                 </div>
             </div>
             <div className='flex justify-center mt-4'>   
-                <img className='xl:min-w-[350px] w-[300px]' src={img} alt="ProfilePicture" />
+                <img className='xl:min-w-[350px] w-[300px]' src="/aboutme-picture.png" alt="ProfilePicture" />
             </div>
 
         </main>
