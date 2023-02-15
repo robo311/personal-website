@@ -34,7 +34,7 @@ function Projects() {
              </div>
             </div>
             <div className='project-image lg:mt-[60px]' style={{ gridColumn: item.column_img}}>
-              <img className='w-full' src={item.image} alt="" />
+              <img className='w-full' src={`/src/assets/project_${item.id}.png`} alt="" />
             </div>
           </div>
         )}
