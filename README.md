@@ -39,7 +39,7 @@ My personal website where you can learn something about me or just see all my pr
 
 - Adding English CV (Only Slovak works for now)
 
-- Adding logo (Not yet finished)
+- Adding logo (✅) 
 
 ## Authors
 
