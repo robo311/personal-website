@@ -44,7 +44,7 @@ function Contact() {
                 </div>
                 <div className='flex flex-col gap-2'>
                     <label className='font-medium text-[18px]'>Your question</label>
-                    <textarea required id='message' name="message" className='md:w-[575px] w-[240px] h-[150px]'></textarea>
+                    <textarea required id='message' name="message" className='md:w-[535px] w-[220px] h-[150px]'></textarea>
                 </div>
                 <input type="submit" value="Send" className='outline outline-1 hover:outline-2 outline-[#4AFFA8] py-2 px-6 rounded-lg mt-4 transform hover:translate-y-[-2px] transition-transform duration-150 cursor-pointer'/>
             </form>
