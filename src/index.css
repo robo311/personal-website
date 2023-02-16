@@ -9,9 +9,27 @@
     box-sizing: border-box;
 }
 
+/* Scrollbar styling */
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #0A1422;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #4AFFA8
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #90ffc9;
+}
+
+
 html{
     @apply scroll-smooth h-[100%];
-    scrollbar-color: #193358 #0A1422;
+    scrollbar-color: #4AFFA8 #0A1422;
     scrollbar-width: thin;
 }
 

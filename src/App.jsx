@@ -11,7 +11,6 @@ import ResumePortal from './components/ResumePortal'
 import Sidebar from './components/Sidebar'
 
 
-
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [isOpen, setIsOpen] = useState(false)
@@ -30,6 +29,7 @@ function App() {
       document.body.style.overflow = 'hidden'
     }else if(isOpen === false){
       document.body.style.overflow = 'scroll'
+      document.body.style.overflowX = 'hidden'
     }
   },[isOpen])
   
@@ -48,7 +48,7 @@ function App() {
         </div>
         <More_projects/>
         <Contact/>
-      </div>
+      </div> 
       <Footer/>
     </>
   )
