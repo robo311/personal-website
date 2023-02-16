@@ -25,30 +25,32 @@ function App() {
     };
   }, []);
 
-
-
+  useEffect(()=> {
+    if(isOpen === true){
+      document.body.style.overflow = 'hidden'
+    }else if(isOpen === false){
+      document.body.style.overflow = 'scroll'
+    }
+  },[isOpen])
+  
   console.log(show)
 
   return (
     <>
-      
-        <Navbar isOpen={isOpen} setIsOpen={setIsOpen} setShowPortal={setShow}/>
-        <Sidebar/>
-        <ResumePortal showPortal={show} closePortal={()=>setShow(false)}/>
-        <div className={`App container mx-auto px-[20px] lg:px-[120px] md:px-[80px] sm:px-[60px] pt-10 ${isOpen && " duration-100 transition-all ease-in-out blur-sm"}`}>
-          <Heropage/>
-          <About/>
-          <div id='projects'>
-            {width < 1024 ? <Projects_mobile/> : <Projects/> }
-          </div>
-          <More_projects/>
-          <Contact/>
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} setShowPortal={setShow}/>
+      <Sidebar/>
+      <ResumePortal showPortal={show} closePortal={()=>setShow(false)}/>
+      <div className={`App container mx-auto px-[20px] lg:px-[120px] md:px-[80px] sm:px-[60px] pt-10 ${isOpen && " duration-100 transition-all ease-in-out blur-sm"}`}>
+        <Heropage/>
+        <About/>
+        <div id='projects'>
+          {width < 1024 ? <Projects_mobile/> : <Projects/> }
         </div>
-        <Footer/>
-      
+        <More_projects/>
+        <Contact/>
+      </div>
+      <Footer/>
     </>
-    
-    
   )
 }
 

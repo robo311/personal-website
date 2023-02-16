@@ -30,7 +30,7 @@ function MobileMenu({ isOpen, setIsOpen, setShowPortal }) {
     }
   return (
     <div className='md:hidden block'>
-        <div onClick={toggleMenu} className='flex gap-[6px] flex-col w-[35px] absolute z-30 right-4 top-5'>
+        <div onClick={toggleMenu} className='flex gap-[6px] flex-col w-[35px] absolute z-30 right-4 top-5 cursor-pointer'>
             <span className={`h-[3px] bg-[#4AFFA8] rounded-sm transition-all ease-in-out duration-150 w-8 ${isOpen && " translate-y-[9px] rotate-[-45deg]"} `}></span>
             <span className={`h-[3px] bg-[#4AFFA8] rounded-sm transition-all ease-in-out duration-150 w-8 ${isOpen && "bg-transparent"}`}></span>
             <span className={`h-[3px] bg-[#4AFFA8] rounded-sm transition-all ease-in-out duration-150 w-8 ${isOpen && " translate-y-[-9px] rotate-45"}`}></span>

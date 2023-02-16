@@ -8,7 +8,7 @@
         "image": "/project_1.png",
         "feature": "Featured",
         "main_text": " is a cryptocurrency website powered by CoinGeko API. It showcases the most popular and trending cryptocurrencies. Website offers fuctional login page powered by Firebase. Each coin has a designated page with comprehensive information including prices and changes.",
-        "tags": ["Responsive", "CSS", "HTML", "Axios", "Firebase", "Tailwind", "React"],
+        "tags": ["Responsive", "CoinGeko API", "CSS", "HTML", "Axios", "Firebase", "Tailwind", "React"],
         "source": "Open-Source",
         "source_color": "#409024",
         "github": "https://github.com/robo311/crypto-app",
