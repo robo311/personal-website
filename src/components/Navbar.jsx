@@ -8,7 +8,11 @@ function navbar({isOpen, setIsOpen, setShowPortal}) {
         <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} setShowPortal={setShowPortal}/>
         <div className='bg-[#091628] w-full py-8 shadow-lg px-8'>
             <nav className='md:flex hidden align-middle justify-between'>
-                <div></div>
+                <div className='cursor-pointer'>
+                    <a href="#">
+                        <img className='w-[45px]' src="/logo.svg" alt="" />
+                    </a>
+                </div>
                 <ul className='flex gap-12'>
                     <div className='flex gap-12 text-[16px] mt-2'>
                         <li className='hover:text-[#4AFFA8] transition-all ease-out duration-150'><a href="#">Home</a></li>
